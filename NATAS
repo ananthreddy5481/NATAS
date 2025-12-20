@@ -76,6 +76,63 @@ the .* will help to /
 password : UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
 
 level 11 - 12 :
+in this the XOR encryption is used which is weak.
+
+we need to any two values of a XOR operation to get the third value.
+
+firstly we have the cookie value that is combination of showpassword and bgcolor and there values.
+
+that is first written in jason and then applied XOR encryption and then encoded with base64.
+
+should reverse the process that we need to modify the cookie.
+to do that we need to decode and decrypt the existing cookie and change the showpassword to yes for that we need to reverse the XOR function
+for that we need the key value.
+the key is not shown in the source code so if we have the two values other than key that are the output cookie and the input value(that is json
+and base64 encoded) then we can get the key by executing the same code for getting the key as output .
+then after knowing the key we should again make the same code for making the new cookie as showpassword=yes using the XOR operation between the 
+key and input as json and base64 encoded one as showpassword=yes .
+
+the code for retriving the key is: 
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<?php
+
+$cookie = base64_decode('HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg');
+
+function xor_encrypt($in) {
+    $key = json_encode(array(
+        "showpassword" => "no",
+        "bgcolor" => "#ffffff"
+    ));
+    $text = $in;
+    $outText = '';
+
+    // Iterate through each character
+    for ($i = 0; $i < strlen($text); $i++) {
+        $outText .= $text[$i] ^ $key[$i % strlen($key)];
+    }
+
+    return $outText;
+}
+
+print xor_encrypt($cookie);
+print "\n";
+
+?>
+
+</body>
+</html>
+
+password : yZdkjAYZRd3R7tq7T5kXMjMJlOIkzDeB
+
+level 12 - 13 : 
+
+
+
+
 
 
 
