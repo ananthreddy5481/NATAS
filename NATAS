@@ -1,0 +1,81 @@
+level 0 - 1 :
+
+open the level and go to the page source of the page.
+password 0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq
+
+level 1 - 2 : 
+same like above go to the page source and get the password. in this level he said that right click is restricted to not to access the page source in the right click.
+access the page source by going into the page source of more tools in the application menu.
+password TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI
+this level says that blocking the UI tools like right click , left click does not help to block access the resources like page source. they can be access by giving the correct request.
+
+level 2 - 3 :
+in the page source go to any file source in my case img source file and that was empty and previous directory of the img file is open and readble by everyone.
+in the directory there is a file user.txt a text file and as our password is a text try to open that and get the password . 
+
+this tells that the sensitive files should not be kept openly readble to everyone like the /files directory can be accessed by anyone.
+password : 3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
+
+level 3 - 4 :
+in this the site do not leak info but going into the metadata related to crawls will give you the files in the site and we have only one file in the site in that file there will be password.
+
+crawling - bots will go through the whole site by sending the requests like normal users and helps the search engines to make an index of all the public files at one place.
+in general robots.txt is such file which cointains the info about the files present in the site and it will list them all.
+
+password : QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
+
+level 4 - 5 :
+in this the request need to be send through other address  that is it specified by the site.
+to send like that we have to edit the request sent to the site.
+edit the referer header giving the address he gave.
+if the server side do not filter the request sent by the client it will give the respose.(BAC).
+referer header - the header which will actually say about the address of the previous address of the request coming from. 
+password - 0n35PkggAPm2zbEpOU802c0x0Msn1ToK
+
+level 5 - 6 : 
+
+in this level the cookie says that we are not logged in so modifing that cookie value to 1 will give the response that will have password.
+
+password : 0RoJwHdSKWFTYR5WuiAewauSuNaBXned
+
+level 6 - 7 :
+
+we need a key to open the folder that cointains the password .
+in the page source we will have info(address) of the file that the key is there .
+use it to navigate to the key and give it in the home page to get the password.
+
+password : bmg8SvU1LizuWjx3y7xkNERkHxGre0GS
+
+level 7 - 8 :
+
+in this the parameter is changing for the links given.
+so change the parameter and give the parameter value that is given in the page source value.
+
+the vulnerbiltiy is server side is not checking the authorization of the parameter value.
+password :  xcoXLmzMkoIP9D7hlgPlh9XD7OgLAe5Q
+
+level 8 - 9 :
+
+in this level the vulnerbility is the low level of encoding and showing that encoded password to us is vulnerble.
+decode the given base64 encoded tool.
+
+password : ZE1ck82lmdGIoErlhQgWND6j2Wzz6b6t
+
+level 9 - 10 :
+
+the vulnerbility is the parameter values that we send are directly sent as command that can interupt the flow of work designed by the developer.
+in the code developer used "passthru" which will pass the input as a part of the command line.
+the parameter input : ;  cat  /etc/natas_webpass/natas10
+; - to end the first command (that is grep ) and start the new command (cat command).
+password : t7I5VHvpa14sJTUGV0cbEsbYfFP2dmOu
+
+level 10 - 11 :
+in this same like above but certain charecters like ; and & are blocked so the developer thinks the user cannot pass the parameter value like above.
+use the following command input parameter value : .* /etc/natas_webpass/natas11
+the .* will help to /
+password : UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
+
+level 11 - 12 :
+
+
+
