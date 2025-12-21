@@ -128,7 +128,47 @@ print "\n";
 
 password : yZdkjAYZRd3R7tq7T5kXMjMJlOIkzDeB
 
-level 12 - 13 : 
+level 12 - 13 :
+
+in this the site tells that it will take only jpeg files but there no is proper checking in the code for the type of file uploading.
+upload a php file to get the password with the command -- echo passthru("cat /etc/natas_webpass/natas13");
+
+the uploaded file is stored with the extention of .php in the background but the html in the below generate a link saying that to open the file
+
+but with the jpg extention so there will be an error because there is no file with that complete name(name+jpg extentation).
+
+to change that change the request in the network as the file extention from jpg to php.
+
+password : trbs5pCjCrkuSknBBKHhaBxq6Wm1j3LC
+
+level 13 - 14 :
+
+in this level they used the exif_imagetype() for checking the file type before uploading or sending to the backend.
+
+exif_imagetype() --> this works like it will check the magic numbers of a file type and if they are equal to ff d8 ff e0 (jpeg magic numbers)
+
+we should change the magic numbers of the php file to the jpeg magic nubmers and then upload , do this using the hex editor.
+
+then upload and then when trying to open there will be a problem just like the above unable to open the file.
+
+go to the network tab in devloper tools and change the request(change file from .jpeg to .php).
+
+magic numbers : the numbers in the starting of a file visible when changed to hexadecimal or binary. used to identify the type of the file 
+apart from the extention.
+
+password : z3UYcr4v4uBpeX8f7EZbMHlzK4UR2XtQ
+
+level 14 - 15 :
+
+in this the vulnerbility is sql injection the user input is taken directly into the query that makes the user direct access to the query.
+
+so we can directly by pass the login credentials by sql injection.
+user name  : " or 1=1 --  [ here the " for closing the username string in the structured query that is wrriten in the code. then
+                            1=1 breaks the logic and makes it always true and -- for making the after the query after the input into
+                            a comment. due to or 1=1 when the query goes to the database it always give the reply that the username exist]
+password : leave empty.
+
+password : SdqIqBsFcz3yotlNYErZSZwblkm0lrvx
 
 
 
