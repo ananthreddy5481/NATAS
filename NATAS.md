@@ -50,6 +50,8 @@ password - 0n35PkggAPm2zbEpOU802c0x0Msn1ToK
 
 level 5 - 6 : 
 
+the cookie editing option will be in the storage tab.
+
 in this level the cookie says that we are not logged in so modifing that cookie value to 1 will give the response that will have password.
 
 password : 0RoJwHdSKWFTYR5WuiAewauSuNaBXned
