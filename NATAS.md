@@ -60,7 +60,7 @@ level 6 - 7 :
 
 we need a key to open the folder that cointains the password .
 
-in the page source we will have info(address) of the file that the key is there .
+in the source code we will have info(address) of the file that the key is there .
 
 use it to navigate to the key and give it in the home page to get the password.
 
