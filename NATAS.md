@@ -102,7 +102,7 @@ in this same like above but certain charecters like ; and & are blocked so the d
 
 use the following command input parameter value : .* /etc/natas_webpass/natas11
 
-the .* will help to /
+the grep .* will help us to match any charecter any number of times.
 
 password : UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
 
