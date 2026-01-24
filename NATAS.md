@@ -32,7 +32,9 @@ in this the site do not leak info but going into the metadata related to crawls 
 
 crawling - bots will go through the whole site by sending the requests like normal users and helps the search engines to make an index of all the public files at one place.
 
-in general robots.txt is such file which cointains the info about the files present in the site and it will list them all.
+in general the robots.txt is such a file that the website makers will create so that the autobots related to search engine  will not crawl through that specified files.
+
+this is done so that there will be less number of indexed files for the crawlers so the indexing becomes easy .
 
 password : QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
 
