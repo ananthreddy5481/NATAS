@@ -113,11 +113,11 @@ password : UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
 level 11 - 12 :
 in this the XOR encryption is used which is weak.
 
-we need to any two values of a XOR operation to get the third value.
+we need to have any one value of two of them of the XOR operation to get the third value.
 
 firstly we have the cookie value that is combination of showpassword and bgcolor and there values.
 
-that is first written in jason and then applied XOR encryption and then encoded with base64.
+that is first written in json and then applied XOR encryption and then encoded with base64.
 
 should reverse the process that we need to modify the cookie.
 
