@@ -113,7 +113,7 @@ password : UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
 level 11 - 12 :
 in this the XOR encryption is used which is weak.
 
-we need to have any one value of two of them of the XOR operation to get the third value.
+we need to have any two values of the XOR operation to get the third value.
 
 firstly we have the cookie value that is combination of showpassword and bgcolor and there values.
 
